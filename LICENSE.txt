@@ -1,0 +1,4 @@
+HTML Boilerplate Template by Peter R.(p2)
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+You may use, share, or adapt this template freely, but credit is required.
+Credit example: "Based on a boilerplate by Peter R.(p2) – https://github.com/p2pl"
