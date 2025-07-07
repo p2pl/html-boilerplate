@@ -1,3 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} /*Global Reset & Line Height: Ensures padding and borders are included in an elements total size for easier layout control. */
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+} /*Enables smooth anchor scrolling. Enhances font rendering. Improves vertical rhythm. Prevents text zooming issues on mobile. */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #222;
+} /*Base Body Styling: Clean slate layout with readable font and accessible color palette.*/
+
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+  height: auto;
+} /*Media Elements: Makes images/videos scale with layout and prevents overflow.*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 0;
+} /*Headings: Emphasizes headings with consistent line spacing and removes unexpected spacing.*/
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}/*Links: Modern look, visual feedback on interaction, and accessibility with focus states. */
+
+button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+button:hover {
+  background-color: #005fa3;
+}/*Buttons:  Styled buttons with accessible colors and natural spacing. */
+
+input,
+textarea,
+select {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}/*Forms: Normalized form appearance, consistent spacing, and enhanced user readability. */
+
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -18,4 +91,26 @@
   border-radius: 5px;
   z-index: 1000;
   text-decoration: none;
-}
+}/*Skip Link (Accessibility): Helps screen reader and keyboard users jump directly to content. Visible only on focus.*/
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+} /*.container: Creates a responsive fixed-width layout with a maximum of 1200px while maintaining 90% width on smaller screens.*/
+.mt-1 {          
+ 
+  margin-top: 1rem;
+}  /*Utility Layout Classes: Reusable layout classes for spacing and max-width constraints.*//*Utility classes for applying consistent spacing in layouts.*/
+.mb-1 {           
+  margin-bottom: 1rem;
+} /*Utility Layout Classes: Reusable layout classes for spacing and max-width constraints.*//*Utility classes for applying consistent spacing in layouts.*/
+
+footer {
+  padding: 1rem 1rem;
+  background-color: #f4f4f4;
+  color: #555;
+  text-align: center;
+  font-size: 0.9rem;
+} /* Provides a visually consistent and accessible footer area out of the box. Padding gives breathing room for content. Background color distinguishes it from the main content visually. Text alignment and size make the footer legible without overpowering the main page.
+
+*/
