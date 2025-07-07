@@ -5,6 +5,31 @@ A modern, professional HTML5 starter template packed with best practices for SEO
 Ideal for new websites, portfolios, landing pages, educational projects, or frontend development starters.
 
 ---
+🧠 script.js – Educational JavaScript Boilerplate
+This project includes a modular and beginner-friendly script.js boilerplate to help kickstart your JavaScript interactivity layer.
+
+Features:
+
+DOMContentLoaded wrapper to ensure scripts run only after the DOM is fully loaded
+
+Utility functions ($ and $all) for simplified element selection
+
+Accessible mobile menu toggle example (#menu-button & #main-nav)
+
+Dark mode toggle example (#toggle-theme)
+
+Basic error handling pattern with try/catch
+
+Commented for learning and customization
+
+// Example: Toggle dark mode
+const themeBtn = $("#toggle-theme");
+if (themeBtn) {
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+}
+Use this as a foundation and extend it with your own modules, logic, or components.
 
 ## ✅ Features
 
