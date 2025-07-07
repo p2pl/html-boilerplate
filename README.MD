@@ -4,6 +4,18 @@ A modern, professional HTML5 starter template packed with best practices for SEO
 
 Ideal for new websites, portfolios, landing pages, educational projects, or frontend development starters.
 
+## ✅ Features
+
+- Valid and semantic HTML5 structure
+- SEO-optimized meta tags
+- Open Graph (OG) + Twitter Cards for social sharing
+- JSON-LD structured data (Schema.org)
+- Accessibility-friendly (skip links, semantic roles, ARIA labels)
+- Mobile theming + favicons
+- Clear code comments for learning & customization
+
+---
+
 ---
 # 🧠 script.js
 Educational JavaScript Boilerplate
@@ -33,15 +45,6 @@ This project includes a modular and beginner-friendly script.js boilerplate to h
    }
 Use this as a foundation and extend it with your own modules, logic, or components.
 
-## ✅ Features
-
-- Valid and semantic HTML5 structure
-- SEO-optimized meta tags
-- Open Graph (OG) + Twitter Cards for social sharing
-- JSON-LD structured data (Schema.org)
-- Accessibility-friendly (skip links, semantic roles, ARIA labels)
-- Mobile theming + favicons
-- Clear code comments for learning & customization
 
 ---
 
