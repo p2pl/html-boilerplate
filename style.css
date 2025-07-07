@@ -37,12 +37,27 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #0077cc;
   text-decoration: none;
-}
-a:hover,
-a:focus {
+} /* Targets all <a> elements, regardless of whether they have an href.*/
+
+a:link {
+  color: #0077cc;
+  text-decoration: underline;
+} /* unvisited links. Targets only <a> elements that have an href and have not yet been visited (i.e., unvisited links). */
+
+a:visited {
+  color: purple;
+} /*visited links. The purpose of a:visited is precisely to visually indicate when a user has already clicked a link — especially for usability and accessibility. User memory aid. Navigation clarity. Accessibility support.
+    This is especially good for: Blogs, Search Results, Article Libraries, Docs. */
+
+a:hover,   /* when hovered */
+a:focus {  /* when focused via keyboard */
   text-decoration: underline;
   outline: none;
-}/*Links: Modern look, visual feedback on interaction, and accessibility with focus states. */
+} /*Links: Modern look, visual feedback on interaction, and accessibility with focus states. */
+
+a:active {
+  color: #0077cc;
+} /* when clicked. */
 
 button {
   font: inherit;
@@ -111,6 +126,5 @@ footer {
   color: #555;
   text-align: center;
   font-size: 0.9rem;
-} /* Provides a visually consistent and accessible footer area out of the box. Padding gives breathing room for content. Background color distinguishes it from the main content visually. Text alignment and size make the footer legible without overpowering the main page.
-
-*/
+} /*Provides a visually consistent and accessible footer area out of the box. Padding gives breathing room for content. Background color distinguishes it from the main content visually. 
+    Text alignment and size make the footer legible without overpowering the main page.*/
