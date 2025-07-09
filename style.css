@@ -20,13 +20,17 @@ body {
   color: #222;
 } /*Base Body Styling: Clean slate layout with readable font and accessible color palette.*/
 
-
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.25;
   margin-top: 0;
 } /*Headings: Emphasizes headings with consistent line spacing and removes unexpected spacing.*/
+
 
 header {
   position: sticky;
@@ -79,7 +83,6 @@ header {
   align-items: center;
   color: white;
   font-size: 16px;
-
 }
 .main-nav nav ul li:hover {
   background-color: green;
@@ -166,7 +169,7 @@ header {
   }
 }
 .htmlpart pre.language-html {
-  width: 80%;
+  width: 65%;
   margin: auto auto;
 }
 .jspart {
@@ -252,6 +255,65 @@ code {
 .jspart pre.language-javascript {
   width:50%;
   margin: auto auto;
+}
+.filespart {
+  display: block;
+  flex-direction: row;
+  width: 40%;
+  max-width: none;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background: #0077cc;
+  border-radius: 115px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.308);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: white;
+  text-align: center;
+}
+.filespart h2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin: 0;
+}
+.howto {
+  display: block;
+  flex-direction: row;
+  width: 40%;
+  max-width: none;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background: #0077cc;
+  border-radius: 115px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.308);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: white;
+  text-align: center;
+}
+.howto a{
+  padding: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  background-color: green;
+  border: 1px double #48ff00;
+  border-radius: 15px;
+}
+.howto a:hover{
+  padding: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #48ff00;
+  color: black;
+  border: 1px double white;
+  border-radius: 15px;
 }
 button {
   font: inherit;
