@@ -245,6 +245,10 @@ code {
 .jspart p.jsadvice {
   color: black;
 }
+.htmlpart p.htmladvice {
+  text-align: center;
+  color: black;
+}
 .jspart pre.language-javascript {
   width:50%;
   margin: auto auto;
