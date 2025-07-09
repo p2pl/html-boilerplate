@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+HTML Boilerplate Template by Peter R.(p2)
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+You may use, share, or adapt this template freely, but credit is required.
+Credit example: "Based on a boilerplate by Peter R.(p2) – https://github.com/p2pl"
+-->
+<!--This is HTML declaration. Declares the document type and version of HTML used This tells the browser to render the page using HTML5 standards mode (as opposed to quirks mode).-->
+<html lang="en">
+<!--Root element of an HTML document. lang="en" helps search engines and screen readers determine the primary language of the content.-->  
+<head>
+<!--Metadata for browser/SEO. This section contains metadata, which isn’t directly displayed on the web page.-->
+    <meta charset="UTF-8">
+    <!--Sets the character encoding to UTF-8, which supports almost all characters from all languages. Prevents weird character issues like �.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ensures your site is responsive. It sets the viewport to match the device’s width and ensures proper scaling on mobile devices.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--While mostly legacy, it’s still often included for the purpose of 100% fully complete html boilerplate/template for a website-->
+    <meta name="theme-color" content="#ffffff">
+    <!--Optional but great for mobile browsers: It changes the browser’s address bar color on mobile. A nice UI touch and worth showing in a pro-level boilerplate.-->
+    <meta name="description" content="Insert a short, compelling description of your website for search engines.">
+    <!-- SEO: Meta Description -->
+    <meta name="robots" content="index, follow">
+    <!--This tells search engines they’re allowed to index and follow links on the page. Good teaching opportunity to explain noindex, nofollow, etc.-->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Open Graph. Responsible for how your website looks when it is shared as a link through social media, Facebook, WhatsApp, LinkedIn.-->
+    <meta property="og:title" content="Your Website Title">
+    <!--Purpose: Sets the title shown when your link is shared. Where it shows up: In bold on the social post preview (like the title of an article or page).-->
+    <meta property="og:description" content="Short description for social sharing.">
+    <!--Purpose: Gives a short summary or pitch of your site/page. Where it shows up: Under the title in a social preview (usually 1–2 lines of text).-->
+    <meta property="og:image" content="https://yourdomain.com/image.jpg">
+    <!--Purpose: Specifies the image to display in the preview. Requirements:Should be at least 1200x630 px for best results,Must be hosted online (preferably with full URL),Format: JPG, PNG, or WebP (no SVG). Aspect Ratio	1.91:1
+    Where it shows up: In the main visual area of the shared link preview.-->
+    <meta property="og:url" content="https://yourdomain.com">
+    <!--Purpose: Specifies the canonical URL (the original or preferred URL of your page). This helps prevent duplication and ensures that the preview links to the correct page. 
+    Where it shows up: Not directly visible, but it instructs platforms to point to that URL when someone clicks the shared post.-->
+    <meta property="og:locale" content="en_US">
+    <!-- Declares the default language and region of your content. It tells platforms like Facebook, LinkedIn, Discord, WhatsApp, etc. which language and regional format your page is written in. 
+    Improves accuracy when your site is shared internationally. Prevents confusion for platforms that localize content previews-->
+    <meta property="og:locale:alternate" content="pl_PL">
+    <!--Lists other languages/regions your content supports. This is an optional tag that tells platforms: “This page is also available in Polish.”
+    Include only if you actually support those languages via alternate pages or translations.-->
+    <!--Bonus: If you support multiple languages, you should also include hreflang tags for SEO:
+        <link rel="alternate" hreflang="en" href="https://yourdomain.com/" />
+        <link rel="alternate" hreflang="es" href="https://yourdomain.com/es/" />
+        <link rel="alternate" hreflang="fr" href="https://yourdomain.com/fr/" />
+        These go in the <head> too — and help Google serve the correct version of your site in search results based on the user's language preference.-->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!--What it does: Defines the type of card to be displayed. summary_large_image means: Show a big image, a title, and a description. It’s the most common type because it’s visual and eye-catching.
+    Other options (just FYI): summary: Small image + text. player: For video embeds. app: For mobile app links.
+    Recommended: Use summary_large_image for blogs, landing pages, portfolios, products, etc.-->
+    <meta name="twitter:title" content="Your Website Title">
+    <!--What it does: Sets the title of your page in the Twitter card. It appears bold and clickable — like a headline. Keep it under 70 characters for best fit.-->
+    <meta name="twitter:description" content="Short description for Twitter/X.">
+    <!--What it does: Adds a short description under the title. This gives context about your site or page. Keep it under 200 characters and make it enticing.-->
+    <meta name="twitter:image" content="https://yourdomain.com/image.jpg">  
+    <!--What it does: Loads the image preview that shows up in the post. 
+    This should be a direct URL to an image (usually JPG or PNG), ideally: At least 1200×630px, Under 5MB,  Hosted over HTTPS
+    This is the most important part for visual engagement. Aspect Ratio	1.91:1-->
+    <!--You can preview how your Twitter card will look by pasting your URL into this tool: https://cards-dev.twitter.com/validator-->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Your Website Title",
+      "url": "https://yourdomain.com"
+    }
+    </script>
+    <!--This helps Google better understand your site’s purpose and can lead to enhanced search results (like rich snippets). This is the recommended method by Google and Schema.org because:
+    It’s easy to parse, It doesn’t require additional HTTP requests, It keeps the metadata with the page it describes.
+    This JSON-LD block can be expanded with additional structured data properties for richer search results.-->
+
+    <link rel="stylesheet" href="style.css">
+      <!--Link external stylesheets. Connects an external CSS file (named style.css) to style your HTML elements.-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!--This ensures proper icons on iPhones/iPads when saved to home screen. You can generate one at https://realfavicongenerator.net-->
+    <link rel="canonical" href="https://yourdomain.com/">
+    <!--Prevents duplicate content penalties if the same page is accessible via multiple URLs.-->
+    <title>Your Website Title</title>
+    <!-- Required. Sets the browser tab title, also used by search engines and when bookmarking the page You can include multiple CSS files if needed.-->
+</head>
+
+<body>
+    <!--Everything inside <body> is rendered as the visible webpage content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!--Allows keyboard and screen reader users to bypass nav menus and jump directly to main content. Can be styled with CSS to appear only when focused.-->
+    <header role="banner">
+    <!--The content of the header goes inside it, usually hero banner and navigation is nested inside the header element. Semantic landmarks(role) help screen readers navigate by page sections.-->
+    <nav role="navigation" aria-label="Main navigation"></nav>
+    <!--The content of the navigation, such as menu, navbars etc goes inside here. role=Semantic landmarks help screen readers navigate by page sections. aria-label=Provides a label for screen readers to describe the navigation menu.-->
+    </header>
+
+    <main id="main-content" role="main"></main>
+    <!-- The main content of the page goes inside the main element to keep it semantically correct. 
+    role=Semantic landmarks help screen readers navigate by page sections. 
+    id=unique selector with highest level of specificity that will let you target entire main element via CSS.-->
+    <footer role="contentinfo">        </footer>
+    <!-- role=Semantic landmarks help screen readers navigate by page sections.-->
+<script src="script.js"></script>
+<!--Link external JavaScript. This enables interactivity (e.g., clicking buttons, submitting forms, animations, etc).-->
+<noscript>
+  <p style="color: red; text-align: center;">
+    JavaScript is disabled in your browser. Some features of this site may not work properly.
+  </p>
+</noscript>
+<!--In modern accessibility, sometimes a <noscript> tag is added for users with JavaScript disabled. Optional-->
+</body>
+</html>

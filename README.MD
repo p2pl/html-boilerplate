@@ -1,8 +1,8 @@
 # 🚀 HTML Boilerplate Template
 
-A modern, professional HTML5 starter template packed with best practices for SEO, accessibility, mobile responsiveness, and rich social media sharing. 
+A modern and professional HTML5 boilerplate designed to follow current best practices in SEO, accessibility, responsive design, and social media integration.
 
-Ideal for new websites, portfolios, landing pages, educational projects, or frontend development starters.
+This template serves as an ideal foundation for new websites, personal portfolios, landing pages, educational projects, or front-end development prototypes.
 
 ## ✅ Features
 

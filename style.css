@@ -20,13 +20,7 @@ body {
   color: #222;
 } /*Base Body Styling: Clean slate layout with readable font and accessible color palette.*/
 
-img,
-picture,
-video {
-  max-width: 100%;
-  display: block;
-  height: auto;
-} /*Media Elements: Makes images/videos scale with layout and prevents overflow.*/
+
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
@@ -34,31 +28,195 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 } /*Headings: Emphasizes headings with consistent line spacing and removes unexpected spacing.*/
 
-a {
-  color: #0077cc;
-  text-decoration: none;
-} /* Targets all <a> elements, regardless of whether they have an href.*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent; /* Or your header background color */
+}
 
-a:link {
-  color: #0077cc;
-  text-decoration: underline;
-} /* unvisited links. Targets only <a> elements that have an href and have not yet been visited (i.e., unvisited links). */
+.logo-banner {
+  width: 100%;
+  height: 150px;
+  background-color: #0077cc;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.logo-banner h1 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 25px;
+  font-weight: 800;
 
-a:visited {
-  color: purple;
-} /*visited links. The purpose of a:visited is precisely to visually indicate when a user has already clicked a link — especially for usability and accessibility. User memory aid. Navigation clarity. Accessibility support.
-    This is especially good for: Blogs, Search Results, Article Libraries, Docs. */
+}
+.logo-banner h2 {
+  text-align: center;
+}
+.main-nav nav ul {
+  width: 50%;
+  min-width: 400px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  background-color: #0077cc;
+  border-bottom-right-radius: 115px;
+  border-bottom-left-radius: 115px;
+}
+.main-nav nav ul li {
+  display: inline-flex;
+  margin: 10px;
+  padding: 10px;
+  background-color: #0077cc;
+  border: 1px solid white;
 
-a:hover,   /* when hovered */
-a:focus {  /* when focused via keyboard */
-  text-decoration: underline;
-  outline: none;
-} /*Links: Modern look, visual feedback on interaction, and accessibility with focus states. */
+}
+.main-nav nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
 
-a:active {
-  color: #0077cc;
-} /* when clicked. */
+}
+.main-nav nav ul li:hover {
+  background-color: green;
+}
 
+.htmlpart {
+  width: 80%;
+  max-width: none;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background: #0077cc;
+  border-radius: 115px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #222;
+
+}
+.htmlpartcontent h2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin: 0;
+}
+.htmlpartcontent p {
+  display: flex; 
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 0;
+}
+.htmlpartcontent h3 {
+  text-align: center;
+  color: black;
+}
+.htmlpartcontent hr {
+  width: 90%;
+}
+.bullet-list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em; /* space between items */
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.bullet-list-inline span {
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center; /* Ensures vertical centering of content */
+  padding-left: 2em;   /* Make room for the bullet */
+  /* ...other styles... */
+}
+
+.bullet-list-inline span::before {
+  content: "•";
+  position: absolute;
+  left: 0.7em;
+  color: #48ff00;
+  font-size: 1.2em;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 600px) {
+  .bullet-list-inline {
+    gap: 0.5em;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .bullet-list-inline span {
+    font-size: 0.98em;
+    padding: 0.5em 1em 0.5em 1.8em;
+    border-radius: 0.7em;
+    margin-bottom: 0.3em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.jspart {
+  width: 80%;
+  max-width: none;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background: #0077cc;
+  border-radius: 115px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.308);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: white;
+  text-align: center;
+}
+.jspart h2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin: 0;
+}
+.jspart p {
+  display: flex; 
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 0;
+}
+.jspart hr {
+  width: 90%;
+}
+pre {
+  background: #222;
+  color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  font-size: 1em;
+  overflow-x: auto;
+  white-space: pre-wrap;      /* Allows code to wrap */
+  word-break: break-word;     /* Breaks long words if needed */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  pre {
+    font-size: 0.95em;
+    padding: 0.7em;
+  }
+}
 button {
   font: inherit;
   cursor: pointer;
