@@ -165,6 +165,10 @@ header {
     box-sizing: border-box;
   }
 }
+.htmlpart pre.language-html {
+  width: 80%;
+  margin: auto auto;
+}
 .jspart {
   width: 80%;
   max-width: none;
@@ -203,19 +207,47 @@ pre {
   background: #222;
   color: #fff;
   padding: 1em;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 1em;
   overflow-x: auto;
   white-space: pre-wrap;      /* Allows code to wrap */
   word-break: break-word;     /* Breaks long words if needed */
   max-width: 100%;
+  height: 500px;
   box-sizing: border-box;
+  overflow: scroll;
 }
 @media (max-width: 600px) {
   pre {
     font-size: 0.95em;
     padding: 0.7em;
   }
+}
+code {
+  font-family: Consolas, monospace;
+  font-size: 0.95rem;
+  color: #333;
+}
+.scrollable-code {
+  width: 60%;
+  display: block;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  white-space: pre;
+  overflow-x: auto; /* This makes it scroll horizontally if needed */
+  max-width: 100%;
+}
+.jspart p.jsadvice {
+  color: black;
+}
+.jspart pre.language-javascript {
+  width:50%;
+  margin: auto auto;
 }
 button {
   font: inherit;

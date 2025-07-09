@@ -28,8 +28,12 @@
       "name": "Your Website Title",
       "url": "https://yourdomain.com"
     }
-    </script>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+  
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="canonical" href="https://yourdomain.com/">
@@ -47,7 +51,7 @@
       <nav role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Boilerplate</a></li>
+          <li><a href="#">Boilerplate Generator</a></li>
           <li><a href="#">Contact Me</a></li>
         </ul>
       </nav>
@@ -86,6 +90,78 @@
         <span>Clear code comments for learning & customization</span>
       </div>
     </div>
+    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;!--
+HTML Boilerplate Template by Peter R.(p2)
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+You may use, share, or adapt this template freely, but credit is required.
+Credit example: "Based on a boilerplate by Peter R.(p2) – https://github.com/p2pl"
+--&gt;
+&lt;!--This is HTML declaration. Declares the document type and version of HTML used This tells the browser to render the page using HTML5
+standards mode (as opposed to quirks mode).--&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+&lt;!--Root element of an HTML document. lang=&quot;en&quot; helps search engines and screen readers determine the primary language of the content.--&gt;  
+&lt;head&gt;
+&lt;!--Metadata for browser/SEO. This section contains metadata, which isn’t directly displayed on the web page.--&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;!--Sets the character encoding to UTF-8, which supports almost all characters from all languages.
+    Prevents weird character issues like �.--&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!--Ensures your site is responsive. It sets the viewport to match the device’s width and ensures proper scaling on mobile devices.--&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;!--While mostly legacy, it’s still often included for the purpose of 100% fully complete html boilerplate/template for a website--&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+    &lt;!--Optional but great for mobile browsers: It changes the browser’s address bar color on mobile. A nice UI touch and worth showing
+    in a pro-level boilerplate.--&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Insert a short, compelling description of your website for search engines.&quot;&gt;
+    &lt;!-- SEO: Meta Description --&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;index, follow&quot;&gt;
+    &lt;!--This tells search engines they’re allowed to index and follow links on the page. Good teaching opportunity to explain noindex,
+    nofollow, etc.--&gt;
+    &lt;!-- Open Graph --&gt;
+    &lt;meta property=&quot;og:title&quot; content=&quot;Your Website Title&quot;&gt;
+    &lt;meta property=&quot;og:description&quot; content=&quot;Short description for social sharing.&quot;&gt;
+    &lt;meta property=&quot;og:image&quot; content=&quot;https://yourdomain.com/image.jpg&quot;&gt;
+    &lt;meta property=&quot;og:url&quot; content=&quot;https://yourdomain.com&quot;&gt;
+    &lt;meta property=&quot;og:locale&quot; content=&quot;en_US&quot;&gt;
+    &lt;meta property=&quot;og:locale:alternate&quot; content=&quot;pl_PL&quot;&gt;
+    &lt;!-- Twitter Card --&gt;
+    &lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&gt;
+    &lt;meta name=&quot;twitter:title&quot; content=&quot;Your Website Title&quot;&gt;
+    &lt;meta name=&quot;twitter:description&quot; content=&quot;Short description for Twitter/X.&quot;&gt;
+    &lt;meta name=&quot;twitter:image&quot; content=&quot;https://yourdomain.com/image.jpg&quot;&gt;
+    &lt;script type=&quot;application/ld+json&quot;&gt;
+    {
+      &quot;@context&quot;: &quot;https://schema.org&quot;,
+      &quot;@type&quot;: &quot;WebSite&quot;,
+      &quot;name&quot;: &quot;Your Website Title&quot;,
+      &quot;url&quot;: &quot;https://yourdomain.com&quot;
+    }
+    &lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/apple-touch-icon.png&quot;&gt;
+    &lt;link rel=&quot;canonical&quot; href=&quot;https://yourdomain.com/&quot;&gt;
+    &lt;title&gt;Your Website Title&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;a href=&quot;#main-content&quot; class=&quot;skip-link&quot;&gt;Skip to main content&lt;/a&gt;
+    &lt;header role=&quot;banner&quot;&gt;
+        &lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;&lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main id=&quot;main-content&quot; role=&quot;main&quot;&gt;&lt;/main&gt;
+    &lt;footer role=&quot;contentinfo&quot;&gt;&lt;/footer&gt;
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+    &lt;noscript&gt;
+        &lt;p style=&quot;color: red; text-align: center;&quot;&gt;
+            JavaScript is disabled in your browser. Some features of this site may not work properly.
+        &lt;/p&gt;
+    &lt;/noscript&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
     </section>
     <section class="jspart">
       <div class="jspartcontent">
@@ -105,13 +181,83 @@
         <span>Accessible mobile menu toggle example (#menu-button & #main-nav)</span>
         <span>Dark mode toggle example (#toggle-theme)</span>
         <span>Basic error handling pattern with try/catch</span>
-        <span><pre>// Example: 
+        <span><code>// Example: 
           Toggle dark mode const themeBtn = $("#toggle-theme"); if (themeBtn) {
           themeBtn.addEventListener("click", () => { document.body.classList.toggle("dark"); }); } 
-        </pre></span>
+          </code></span>
       </div>
-      <p>Use this as a foundation and extend it with your own modules, logic, or components.</p>
-      
+      </div>
+      <pre><code class="language-javascript">// script.js
+// JavaScript Boilerplate for Interactivity – By Peter R. (p2)
+// Enforce strict mode – helps catch bugs early by disallowing unsafe actions
+
+"use strict";
+/* -----------------------------------------------
+   Utility Functions
+-------------------------------------------------*/
+
+// Shorthand for selecting a single DOM element
+function $(selector) {
+  return document.querySelector(selector);
+}
+
+// Shorthand for selecting multiple DOM elements
+function $all(selector) {
+  return document.querySelectorAll(selector);
+}
+
+/* -----------------------------------------------
+   Wait for DOM to Load
+-------------------------------------------------*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("🚀 JS is ready!");
+
+  /* ------------------------------
+     Toggle Navigation Menu
+  ------------------------------*/
+  const menuBtn = $("#menu-button");
+  const nav = $("#main-nav");
+
+  if (menuBtn && nav) {
+    menuBtn.addEventListener("click", () => {
+      nav.classList.toggle("open"); // Show/hide mobile menu
+    });
+  }
+
+  /* ------------------------------
+     Toggle Dark Mode Theme
+  ------------------------------*/
+  const themeBtn = $("#toggle-theme");
+
+  if (themeBtn) {
+    themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark"); // Apply/remove 'dark' class
+    });
+  }
+
+  // 🔧 Add more features below as your site grows...
+});
+
+/* -----------------------------------------------
+   Optional: Basic Error Handling
+-------------------------------------------------*/
+
+try {
+  // Add custom JavaScript logic here
+} catch (error) {
+  console.error("Something went wrong:", error);
+}
+
+/* -----------------------------------------------
+   Notes for Developers
+-------------------------------------------------*/
+// ✅ "use strict" ensures cleaner, more secure code
+// ✅ DOMContentLoaded guarantees the page is fully loaded before running code
+// ✅ Utility functions like $() and $all() make DOM manipulation easier
+// ✅ This setup is scalable – perfect for adding modules, form validation, sliders, etc.
+      </code></pre>
+      <p class="jsadvice">Use this as a foundation and extend it with your own modules, logic, or components.</p>
     </section>
   </main>
   <footer role="contentinfo"> </footer>
