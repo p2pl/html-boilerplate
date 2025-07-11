@@ -81,15 +81,6 @@ Use this as a foundation and extend it with your own modules, logic, or componen
 
 ---
 
-## 🌐 Live Preview *(optional)*
-
-If deployed using GitHub Pages, you can link your live demo here:
-```
-https://p2pl.github.io/html-boilerplate/
-```
-
----
-
 ## 🧾 License & Attribution
 
 > HTML Boilerplate Template by **Peter R. (p2)**  

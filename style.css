@@ -285,6 +285,7 @@ code {
   flex-direction: row;
   width: 40%;
   max-width: none;
+  min-width: 400px;
   margin: 2rem auto;
   padding: 2rem 0;
   background: #0077cc;
@@ -315,6 +316,58 @@ code {
   border: 1px double white;
   border-radius: 15px;
 }
+.finalinfo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: 0;
+
+  gap: 10px;
+}
+.finalinfo p {
+  display: flex; 
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 0;
+
+}
+.license {
+  width: 35%;
+  height: auto;
+  margin: 0;
+  padding: 2rem 0;
+  background: #0077cc;
+  border-radius: 115px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.308);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: white;
+  text-align: center;
+}
+.support {
+  width: 35%;
+  height: auto;
+  margin: 0;
+  padding: 2rem 0;
+  background: #0077cc;
+  border-radius: 115px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.308);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: white;
+  text-align: center;
+}
+.support ul {
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
 button {
   font: inherit;
   cursor: pointer;
