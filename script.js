@@ -58,22 +58,36 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      let html = `<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="UTF-8">\n`;
+      let html = `<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n`;
 
       // 🧠 Optional Meta Sections
       if (form["include-seo"].checked) {
         html += `<meta name="description" content="Insert your description here.">\n`;
+        html += `<meta name="robots" content="index, follow">\n`;
       }
       if (form["include-og"].checked) {
         html += `<meta property="og:title" content="Your Title">\n`;
         html += '<meta property="og:description" content="Short description for social sharing.>\n';
+        html += '<meta property="og:image" content="https://yourdomain.com/image.jpg">\n';
+        html += '<meta property="og:url" content="https://yourdomain.com">\n';
+        html += '<meta property="og:locale" content="en_US">\n';
+        html += '<meta property="og:locale:alternate" content="pl_PL">\n';
+        
       }
       if (form["include-twitter"].checked) {
         html += `<meta name="twitter:card" content="summary_large_image">\n`;
+        html += `<meta name="twitter:title" content="Your Website Title">\n`;
+        html += `<meta name="twitter:description" content="Short description for Twitter/X.">\n`;
+        html += `<meta name="twitter:image" content="https://yourdomain.com/image.jpg">\n`;
       }
       if (form["include-schema"].checked) {
-        html += `<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"My Site"}</script>\n`;
-      }
+        html += `<script type="application/ld+json">
+        {   "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name": "Your Website Title",
+            "url": "https://yourdomain.com" }
+          </script>\n`;
+        }
 
       html += `<title>Your Website</title>\n</head>\n<body>\n`;
 
