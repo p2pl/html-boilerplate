@@ -443,6 +443,32 @@ code {
     max-width: 100%;
   }
 }
+#contact-main {
+  margin-top: -70px;
+  display: flex;
+  justify-content: center;
+  background-image: url("./mainback.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+
+  width: 100wv;
+  height: 100vh;
+}
+.contactme {
+  margin-top: 120px;
+  display: inline-flex;
+  justify-content: center;
+  width: 650px;
+  height: 500px;
+  border-radius: 115px;
+  background-color: transparent;
+  backdrop-filter: blur(35px);
+}
+.contactme h2 {
+  margin-top: 45px;
+}
+
+
 button {
   font: inherit;
   cursor: pointer;
@@ -467,7 +493,7 @@ select {
 }
 label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }/*Forms: Normalized form appearance, consistent spacing, and enhanced user readability. */
 
 .skip-link {

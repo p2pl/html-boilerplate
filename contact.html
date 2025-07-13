@@ -57,26 +57,16 @@
       </nav>
     </section>
   </header>
-
-  <main class="maingen" role="main">
-    <section class="gen-intro">
-      <div></div>
-    </section>
-    <section class="generator">
-      <form id="boilerplate-form">
-        <fieldset><legend>Select Options for Your HTML Template:</legend>
-        <label><input type="checkbox" name="include-seo" checked> SEO Meta Tags</label><br>
-        <label><input type="checkbox" name="include-og" checked> Open Graph Tags</label><br>
-        <label><input type="checkbox" name="include-twitter"> Twitter Card Tags</label><br>
-        <label><input type="checkbox" name="include-schema"> JSON-LD Schema</label><br>
-        <label><input type="checkbox" name="include-accessibility"> Accessibility Features</label><br>
-        <label><input type="checkbox" name="include-noscript"><code>&lt;noscript&gt;</code> Fallback</label></fieldset><br>
-      </section>
-       <button id="generate-btn" type="submit">Generate HTML</button>
-
-        <pre id="output"></pre>
-        <button id="download-btn" style="display:none;">Download .html</button>
+  <main id="contact-main" role="main">
+    <section class="contactme">
+        <form class="s">
+            <h2>Fill out the form below to contact me</h2>
+            <label>Name:<input placeholder="Name"></label>
+            <label>E-mail<input placeholder="E-mail address"></label>
+            <label>Message:<textarea placeholder="Enter Your Message Here"></textarea></label>
+            <button type="submit">Send</button>
         </form>
+    </section>
   </main>
   <footer role="contentinfo"> </footer>
 
