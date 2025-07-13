@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Insert a short, compelling description of your website for search engines.">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph. Responsible for how your website looks when it is shared as a link through social media, Facebook, WhatsApp, LinkedIn.-->
+  <meta property="og:title" content="Your Website Title">
+  <meta property="og:description" content="Short description for social sharing.">
+  <meta property="og:image" content="https://yourdomain.com/image.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your Website Title">
+  <meta name="twitter:description" content="Short description for Twitter/X.">
+  <meta name="twitter:image" content="https://yourdomain.com/image.jpg">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Your Website Title",
+      "url": "https://yourdomain.com"
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://yourdomain.com/">
+  <title>Your Website Title</title>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header role="banner">
+    <section class="logo-banner">
+      <h1>HTML5 BOILERPLATE</h1>
+      <h2>COMPLETE, COMMENTED WITH EXPLANATIONS, BEGINNERS FRIENDLY.</h2>
+    </section>
+    <section class="main-nav">
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Boilerplate Generator</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main class="maingen" role="main">
+    <section class="gen-intro">
+      <div></div>
+    </section>
+    <section class="generator">
+      <form id="boilerplate-form">
+        <fieldset><legend>Select Options for Your HTML Template:</legend>
+        <label><input type="checkbox" name="include-seo" checked> SEO Meta Tags</label><br>
+        <label><input type="checkbox" name="include-og" checked> Open Graph Tags</label><br>
+        <label><input type="checkbox" name="include-twitter"> Twitter Card Tags</label><br>
+        <label><input type="checkbox" name="include-schema"> JSON-LD Schema</label><br>
+        <label><input type="checkbox" name="include-accessibility"> Accessibility Features</label><br>
+        <label><input type="checkbox" name="include-noscript"><code>&lt;noscript&gt;</code> Fallback</label></fieldset><br>
+      </section>
+       <button id="generate-btn" type="submit">Generate HTML</button>
+
+        <pre id="output"></pre>
+        <button id="download-btn" style="display:none;">Download .html</button>
+        </form>
+  </main>
+  <footer role="contentinfo"> </footer>
+
+  <script src="script.js"></script>
+  <noscript>
+    <p style="color: red; text-align: center;">
+      JavaScript is disabled in your browser. Some features of this site may not work properly.
+    </p>
+  </noscript>
+</body>
+
+</html>

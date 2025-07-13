@@ -367,18 +367,92 @@ code {
   display: flex;
   justify-content: flex-start;
 }
+/*----------------Boilerplate Generator Only below------------------------------------------------- */
+.gen-intro {
+  width: 80%;
+  max-width: none;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background: #0077cc;
+  border-radius: 115px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #222;
+}
+.generator {
+  width: 80%;
+  max-width: none;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background: #0077cc;
+  border-radius: 115px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: white;
+}
 
+#boilerplate-form {
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: 1.0rem auto 0 auto;
+}
+
+#boilerplate-form label {
+  font-size: 1rem;
+  display: block;
+  align-items: center;
+  gap: 0
+}
+#generate-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin: 0 45%;
+  margin-bottom: 1rem;
+}
+#output {
+  width: 100%;
+  max-width: 800px;
+  min-height: 120px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  color: black;
+}
+
+#download-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 50%;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
+  #boilerplate-form {
+    max-width: 100%;
+  }
+}
 button {
   font: inherit;
   cursor: pointer;
-  background-color: #0077cc;
+  background-color: #005fa3;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
 }
 button:hover {
-  background-color: #005fa3;
+  background-color: green;
 }/*Buttons:  Styled buttons with accessible colors and natural spacing. */
 
 input,
